@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:padding="1.5dp"
+    android:layout_margin="20dp"
+    android:background="@drawable/bg_shape_green_top_coner" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shape_white_top_coner"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:gravity="left|center"
+            android:text="确认提示"
+            android:textColor="@color/txt_black_light2"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:background="@color/line_light_gray" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/dialog_cofirm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/txt_hisense_green"
+                android:text="@string/confirm_text"
+                android:textColor="@drawable/text_white_gray"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/dialog_layout_two_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/dialog_left"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="@string/confirm_text"
+                    android:textColor="@drawable/text_green_drak" />
+
+                <Button
+                    android:id="@+id/dialog_right"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="@string/cancel_text"
+                    android:textColor="@drawable/text_drak_green" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

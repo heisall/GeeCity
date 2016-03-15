@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/layout_top_bar" />
+
+    <TextView
+        android:id="@+id/textView001"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout_top"
+        android:layout_marginTop="20dp"
+        android:background="@color/line_light_gray" />
+
+    <EditText
+        android:id="@+id/et_reset_pwd_old"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView001"
+        android:background="@color/txt_white"
+        android:drawableLeft="@drawable/icn_reset_pwd"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:hint="请输入原始密码"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="50dp"
+        android:textColorHint="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/textView002"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/et_reset_pwd_old"
+        android:background="@color/line_light_gray" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView002"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_light_gray" />
+
+    <EditText
+        android:id="@+id/et_reset_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:background="@color/txt_white"
+        android:drawableLeft="@drawable/icn_reset_pwd"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:hint="请输入6~20位新密码"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="50dp"
+        android:textColorHint="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_reset_pwd"
+        android:background="@color/line_light_gray" />
+
+    <Button
+        android:id="@+id/btn_reset_pwd_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_reset_pwd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_send"
+        android:text="提          交"
+        android:textColor="@drawable/text_white_gray"
+        android:textSize="@dimen/text_size_15" />
+
+    <Button
+        android:id="@+id/btn_reset_showpwd"
+        android:layout_width="55dp"
+        android:visibility="gone"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/et_reset_pwd"
+        android:layout_alignBottom="@+id/et_reset_pwd"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/off_btn"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_12" />
+
+</RelativeLayout>

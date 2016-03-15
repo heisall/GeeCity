@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_item_live_business"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/txt_white"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/img_item_live_business_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icn_community_selected" />
+
+    <TextView
+        android:id="@+id/tv_item_live_business_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/img_item_live_business_logo"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:maxLines="2"
+        android:text="商户"
+        android:textColor="@color/txt_black_light2"
+        android:textSize="@dimen/text_size_14" />
+
+    <LinearLayout
+        android:id="@+id/ly_item_live_tedian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_item_live_business_name"
+        android:layout_below="@+id/tv_item_live_business_name"
+        android:layout_marginTop="5dp"
+        android:gravity="top|left" >
+
+        <TextView
+            android:id="@+id/tv_item_live_business_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_props"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="购物1"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_item_live_business_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_props"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="购物2"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_item_live_business_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_props"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="购物3"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_item_live_business_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_props"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="购物4"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_item_live_business_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_props"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="购物5"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_item_live_business_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_props"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="购物6"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/raBar_item_appraise"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_item_live_business_logo"
+        android:layout_alignParentRight="true"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv_item_live_business_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_item_live_business_logo"
+        android:layout_alignLeft="@+id/ly_item_live_tedian"
+        android:gravity="center"
+        android:text="查看人数：200"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_12" />
+
+</RelativeLayout>

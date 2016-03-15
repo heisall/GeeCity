@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/line_page_selected_left" />
+
+    <CheckBox
+        android:id="@+id/cb_payment_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:button="@drawable/btn_house_bind_agree_selector"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cb_payment_left"
+        android:layout_alignBottom="@+id/cb_payment_left"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/cb_payment_left"
+        android:text="账单月份"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cb_payment_left"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:text="费用名称"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cb_payment_left"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="应缴金额"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cb_payment_left"
+        android:background="@color/line_light_gray" />
+
+    <com.geecity.hisenseplus.home.view.ListViewForScrollView
+        android:id="@+id/xl_payment_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ly_bottom_pament_left"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:cacheColorHint="@color/txt_hint_gray"
+        android:clickable="true"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:headerDividersEnabled="false"
+        android:listSelector="@null"
+        android:scrollbars="none" >
+    </com.geecity.hisenseplus.home.view.ListViewForScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/xl_payment_left"
+        android:layout_marginBottom="52dp"
+        android:background="@color/line_light_gray" />
+
+    <RelativeLayout
+        android:id="@+id/ly_bottom_pament_left"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_patment_bottom"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="总计：￥"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_payment_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView6"
+            android:text="0.0"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="@dimen/text_size_18" />
+
+        <Button
+            android:id="@+id/btn_payment_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_send"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="缴纳费用"
+            android:textColor="@drawable/text_white_green"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,236 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/txt_white" >
+
+    <CheckBox
+        android:id="@+id/cb_item_payment_left"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:button="@drawable/btn_house_bind_agree_selector"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/rly_item_payment_0"
+        android:background="@color/line_light_gray" />
+
+    <TextView
+        android:id="@+id/tv_item_payment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/cb_item_payment_left"
+        android:text="2015.10"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <RelativeLayout
+        android:id="@+id/rly_item_payment_0"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tv_item_payment_date" >
+
+        <TextView
+            android:id="@+id/tv_item_payment_00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="1物业费"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_item_payment_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2000.10"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_light_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rly_item_payment_1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/rly_item_payment_0"
+        android:layout_toRightOf="@+id/tv_item_payment_date" >
+
+        <TextView
+            android:id="@+id/tv_item_payment_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="2物业费"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_item_payment_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2000.10"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_light_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rly_item_payment_2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/rly_item_payment_1"
+        android:layout_toRightOf="@+id/tv_item_payment_date"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_item_payment_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="3物业费"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_item_payment_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2000.10"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_light_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rly_item_payment_3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/rly_item_payment_2"
+        android:layout_toRightOf="@+id/tv_item_payment_date" >
+
+        <TextView
+            android:id="@+id/tv_item_payment_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="4物业费"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_item_payment_31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2000.10"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_light_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rly_item_payment_4"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/rly_item_payment_3"
+        android:layout_toRightOf="@+id/tv_item_payment_date" >
+
+        <TextView
+            android:id="@+id/tv_item_payment_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="5物业费"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_item_payment_41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2000.10"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_light_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rly_item_payment_5"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/rly_item_payment_4"
+        android:layout_toRightOf="@+id/tv_item_payment_date" >
+
+        <TextView
+            android:id="@+id/tv_item_payment_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="6物业费"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_item_payment_51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2000.10"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_light_gray" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_toLeftOf="@+id/rly_item_payment_0"
+        android:background="@color/line_light_gray" />
+
+
+</RelativeLayout>

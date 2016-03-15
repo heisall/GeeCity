@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scv_estate_detail_new"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rly_estate_new_top"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_alignParentTop="true" >
+
+            <com.geecity.hisenseplus.home.view.PicViewer
+                android:id="@+id/pv_estate_second_pics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true" >
+            </com.geecity.hisenseplus.home.view.PicViewer>
+
+            <Button
+                android:id="@+id/btn_estate_new_back"
+                android:layout_width="30dp"
+                android:layout_height="31dp"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_estate_back" />
+
+            <Button
+                android:id="@+id/btn_estate_new_call"
+                android:layout_width="80dp"
+                android:layout_height="@dimen/top_bar_back_height"
+                android:layout_alignBaseline="@+id/btn_estate_new_back"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_send"
+                android:padding="4dp"
+                android:text="联系电话"
+                android:textColor="@drawable/text_white_gray"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/tv_estate_new_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#60000000"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="222"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/text_size_20" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rtly_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rly_estate_new_top"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:id="@+id/tv_estate_new_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="2000"
+                android:textColor="@color/txt_hisense_green"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_estate_new_price"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_estate_new_price"
+                android:text="元/平"
+                android:textColor="@color/txt_hisense_green"
+                android:textSize="@dimen/text_size_12" />
+
+            <Button
+                android:id="@+id/btn_estate_new_collect"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/textView1"
+                android:background="@drawable/icn_un_collected" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/btn_share"
+                android:clickable="true"
+                android:text="收藏"
+                android:textColor="@color/txt_hint_gray"
+                android:textSize="@dimen/text_size_12" />
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/textViewShare"
+                android:background="@drawable/btn_share" />
+
+            <TextView
+                android:id="@+id/textViewShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:clickable="true"
+                android:text="分享"
+                android:textColor="@color/txt_hint_gray"
+                android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rtly_center"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_light_gray" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView31"
+            android:layout_margin="10dp"
+            android:text="户型图"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_18" />
+
+        <HorizontalScrollView
+            android:id="@+id/hsclv_estate_new_pics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2" >
+
+            <LinearLayout
+                android:id="@+id/ly_estate_new_pics"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/hsclv_estate_new_pics"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_light_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView3"
+            android:background="@color/txt_white"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="楼盘信息"
+                android:textColor="@color/txt_hisense_green"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/line_light_gray" />
+
+            <com.geecity.hisenseplus.home.view.ListViewForScrollView
+                android:id="@+id/lvfs_estate_new_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/txt_hint_gray"
+                android:divider="@null"
+                android:headerDividersEnabled="false"
+                android:listSelector="@null"
+                android:scrollbars="none" >
+            </com.geecity.hisenseplus.home.view.ListViewForScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

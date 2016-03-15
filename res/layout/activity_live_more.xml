@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/txt_white" >
+
+    <com.geecity.hisenseplus.home.view.PicViewer
+        android:id="@+id/lvfs_estate_new_info"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/btn_live_more_back"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_estate_back" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lvfs_estate_new_info"
+        android:background="@color/layout_bg_gray" />
+
+    <ListView
+        android:id="@+id/lv_live_more_all"
+        android:layout_width="85dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line"
+        android:cacheColorHint="@color/txt_hint_gray"
+        android:clickable="true"
+        android:divider="@null"
+        android:dividerHeight="2dp"
+        android:headerDividersEnabled="false"
+        android:listSelector="@null"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lvfs_estate_new_info"
+        android:layout_toRightOf="@+id/lv_live_more_all"
+        android:background="@color/layout_bg_gray"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scrview_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lvfs_estate_new_info"
+        android:layout_toRightOf="@+id/line1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <TextView
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/layout_bg_gray"
+                android:padding="5dp"
+                android:text="  商户列表"
+                android:textColor="@color/txt_hisense_green"
+                android:textSize="@dimen/text_size_16" />
+
+            <com.geecity.hisenseplus.home.view.ListViewForScrollView
+                android:id="@+id/xlv_live_more_business"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/txt_hint_gray"
+                android:divider="@color/line_light_gray_1"
+                android:dividerHeight="0.5dp"
+                android:headerDividersEnabled="false"
+                android:listSelector="@null"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/layout_bg_gray"
+                android:padding="5dp"
+                android:text="  团购商品"
+                android:textColor="@color/txt_hisense_green"
+                android:textSize="@dimen/text_size_16" />
+
+            <com.geecity.hisenseplus.home.view.ListViewForScrollView
+                android:id="@+id/xlv_live_more_groupbuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/txt_hint_gray"
+                android:divider="@color/line_light_gray_1"
+                android:clickable="true"
+                android:dividerHeight="0.5dp"
+                android:headerDividersEnabled="false"
+                android:listSelector="@null"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray" >
+
+    <com.geecity.hisenseplus.home.view.ListViewForScrollView
+        android:id="@+id/xl_payment_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ly_center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="1dp"
+        android:cacheColorHint="@color/txt_hint_gray"
+        android:clickable="true"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:headerDividersEnabled="false"
+        android:listSelector="@null"
+        android:scrollbars="none" >
+    </com.geecity.hisenseplus.home.view.ListViewForScrollView>
+
+    <TextView
+        android:id="@+id/line13"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/xl_payment_left"
+        android:background="@color/line_light_gray" />
+
+    <LinearLayout
+        android:id="@+id/ly_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_pay_by_selected"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总计：￥"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_payment_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3000.20"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_pay_by_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_payment_pay"
+        android:layout_marginBottom="10dp"
+        layout="@layout/layout_pay_by" />
+
+    <Button
+        android:id="@+id/btn_payment_pay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_send"
+        android:text="确认支付"
+        android:textColor="@drawable/text_white_green"
+        android:textSize="@dimen/text_size_16" />
+
+</RelativeLayout>

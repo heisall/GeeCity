@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/txt_white" >
+
+    <!-- <ScrollView
+        android:id="@+id/scr_business_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" > -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/img_business_detail"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_alignParentTop="true"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+            <Button
+                android:id="@+id/btn_business_detail_back"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_arrow_left_normal" />
+
+            <TextView
+                android:id="@+id/tv_business_detail_title"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/line1"
+                android:layout_centerHorizontal="true"
+                android:padding="2dp"
+                android:background="@color/txt_transelte_black"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/img_business_detail"
+                android:layout_marginTop="1dp"
+                android:background="@color/line_light_gray" />
+
+            <TextView
+                android:id="@+id/tv_business_detail_catogery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:background="@color/txt_white"
+                android:clickable="true"
+                android:drawableEnd="@drawable/arrow_down_2"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="商品分类"
+                android:visibility="gone"
+                android:textColor="@drawable/text_gray_green"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/line_22"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:layout_below="@+id/tv_business_detail_catogery"
+                android:background="@color/line_light_gray" />
+
+            <ImageView
+                android:id="@+id/img_business_detail_center"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@+id/line_22"
+                android:clickable="true"
+                android:visibility="gone"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/ly_business_navi"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/img_business_detail_center"
+                android:background="@color/layout_bg_gray"
+                android:orientation="horizontal"
+                android:paddingBottom="1dp">
+
+                <Button
+                    android:id="@+id/btn_business_detail_newest"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/txt_white"
+                    android:text="全部"
+                    android:textColor="@color/txt_hisense_green"
+                    android:textSize="@dimen/text_size_16" />
+
+                <Button
+                    android:id="@+id/btn_business_detail_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/txt_white"
+                    android:text="销量"
+                    android:textColor="@color/txt_black_light2"
+                    android:textSize="@dimen/text_size_16" />
+
+                <Button
+                    android:id="@+id/btn_business_detail_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/txt_white"
+                    android:text="价格"
+                    android:textColor="@color/txt_black_light2"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <com.geecity.hisenseplus.home.view.XListView
+                android:id="@+id/xlv_business_detail_merch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ly_business_navi"
+                android:cacheColorHint="@color/txt_hint_gray"
+                android:clickable="true"
+                android:background="#50CCCCCC"
+                android:divider="@color/line_light_gray_1"
+                android:dividerHeight="0.5dp"
+                android:headerDividersEnabled="false"
+                android:listSelector="@null"
+                android:scrollbars="none" />
+        </RelativeLayout>
+    <!-- </ScrollView> -->
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/line_page_selected_right" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="缴费时间"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+android:layout_centerHorizontal="true"
+        android:text="费用名称"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView41"
+        android:layout_toRightOf="@+id/textView3"
+        android:gravity="center"
+        android:text="缴费期间"
+        android:visibility="gone"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="应缴金额"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="5dp"
+        android:background="@color/line_light_gray" />
+
+    <com.geecity.hisenseplus.home.view.ListViewForScrollView
+        android:id="@+id/xl_payment_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:cacheColorHint="@color/txt_hint_gray"
+        android:clickable="true"
+        android:divider="@null"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:headerDividersEnabled="false"
+        android:listSelector="@null"
+        android:scrollbars="none" >
+    </com.geecity.hisenseplus.home.view.ListViewForScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/xl_payment_left"
+        android:layout_marginBottom="52dp"
+        android:background="@color/line_light_gray" />
+
+    <Button
+        android:id="@+id/btn_payment_pay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_send"
+        android:text="缴纳费用"
+        android:textColor="@drawable/text_white_green"
+        android:textSize="@dimen/text_size_16" />
+
+</RelativeLayout>

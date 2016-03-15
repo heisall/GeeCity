@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/bg_notice"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/item_notice_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="重要：寒潮来袭，快把装备上全喽！"
+        android:textColor="@color/txt_notice_black"
+        android:textSize="@dimen/text_size_18" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp" >
+
+        <TextView
+            android:id="@+id/item_notice_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginTop="1dp"
+            android:text="2015-11-11"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/item_notice_tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:drawableLeft="@drawable/icn_disc_msg"
+            android:drawablePadding="5dp"
+            android:gravity="center|right"
+            android:text="123"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/text_size_12" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/item_notice_tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="辛苦了"
+        android:textColor="@color/txt_white"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

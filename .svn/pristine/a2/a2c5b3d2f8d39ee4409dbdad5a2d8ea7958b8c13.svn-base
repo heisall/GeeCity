@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_item_groupbuy_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/txt_white"
+    android:clickable="true"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/img_item_groupbuy_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/icn_community_selected" />
+
+    <TextView
+        android:id="@+id/tv_item_groupbuy_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/img_item_groupbuy_logo"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:maxLines="2"
+        android:text="商品"
+        android:textColor="@color/txt_black_light2"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/tv_item_groupbuy_prices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frly_item_groupbuy"
+        android:layout_alignLeft="@+id/tv_item_groupbuy_name"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="￥0.00"
+        android:textColor="@color/txt_hisense_green"
+        android:textSize="@dimen/text_size_14" />
+
+    <FrameLayout
+        android:id="@+id/frly_item_groupbuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_item_groupbuy_logo"
+        android:layout_alignLeft="@+id/tv_item_groupbuy_name" >
+
+        <TextView
+            android:id="@+id/tv_item_groupbuy_old_prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="￥1000.00"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/txt_hint_gray" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_item_groupbuy_logo"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_shape_green_coner"
+        android:orientation="vertical"
+        android:padding="1.5dp" >
+
+        <TextView
+            android:id="@+id/tv_item_groupbuy_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape_white_top_coner"
+            android:gravity="center"
+            android:paddingBottom="1dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="1dp"
+            android:textColor="@color/txt_black_light2"
+            android:textSize="@dimen/text_size_12" />
+
+        <Button
+            android:id="@+id/btn_item_groupbuy_buy"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="马上抢"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</RelativeLayout>

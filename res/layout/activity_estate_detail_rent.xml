@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scv_estate_detail_rent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <com.geecity.hisenseplus.home.view.PicViewer
+            android:id="@+id/pv_estate_rent_pics"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/btn_estate_rent_back"
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_estate_back" />
+
+        <TextView
+            android:id="@+id/tv_estate_rent_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pv_estate_rent_pics"
+            android:layout_margin="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_25" />
+
+        <TextView
+            android:id="@+id/tv_estate_rent_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_estate_rent_name"
+            android:layout_below="@+id/tv_estate_rent_name"
+            android:layout_marginTop="-7dp"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/tv_estate_rent_time"
+            android:layout_alignRight="@+id/tv_estate_rent_name"
+            android:layout_below="@+id/tv_estate_rent_time"
+            android:layout_marginTop="5dp"
+            android:background="@color/line_light_gray" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="10dp"
+            android:text="租金"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/tv_estate_rent_prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:textColor="@color/txt_red"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_estate_rent_prices"
+            android:text="户型"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_estate_rent_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/TextView01"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/TextView033"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_estate_rent_type"
+            android:text="面积"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_estate_rent_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView033"
+            android:layout_alignRight="@+id/line1"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/TextView033"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_estate_rent_time"
+            android:layout_alignParentRight="@+id/tv_estate_rent_name"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_light_gray" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line1"
+            android:layout_below="@+id/line1"
+            android:layout_marginTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="楼层"
+                    android:textColor="@color/txt_hisense_green"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_estate_rent_floors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="@color/txt_hint_gray"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="朝向"
+                    android:textColor="@color/txt_hisense_green"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_estate_rent_orient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="@color/txt_hint_gray"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_estate_rent_time"
+            android:layout_alignRight="@+id/tv_estate_rent_name"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginTop="5dp"
+            android:background="@color/line_light_gray" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line1"
+            android:layout_below="@+id/line2"
+            android:layout_marginTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年代"
+                    android:textColor="@color/txt_hisense_green"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_estate_rent_years"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="@color/txt_hint_gray"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="装修"
+                    android:textColor="@color/txt_hisense_green"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_estate_rent_zhuangx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="@color/txt_hint_gray"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_estate_rent_time"
+            android:layout_alignRight="@+id/tv_estate_rent_name"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginTop="5dp"
+            android:background="@color/line_light_gray" />
+
+        <TextView
+            android:id="@+id/textview_pay_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line1"
+            android:layout_below="@+id/line3"
+            android:layout_marginTop="5dp"
+            android:text="付款方式"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_estate_rent_paytype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textview_pay_type"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/textview_pay_type"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_estate_rent_time"
+            android:layout_alignRight="@+id/tv_estate_rent_name"
+            android:layout_below="@+id/textview_pay_type"
+            android:layout_marginTop="5dp"
+            android:background="@color/line_light_gray" />
+
+        <TextView
+            android:id="@+id/textview_peitss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line1"
+            android:layout_below="@+id/line4"
+            android:layout_marginTop="5dp"
+            android:text="配套设施"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <com.geecity.hisenseplus.home.view.GridViewForScrollView
+            android:id="@+id/gvfs_estate_rent_ptss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_peitss"
+            android:layout_margin="10dp"
+            android:cacheColorHint="@color/txt_hint_gray"
+            android:clickable="true"
+            android:fadingEdge="none"
+            android:horizontalSpacing="5dp"
+            android:numColumns="5"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp" >
+        </com.geecity.hisenseplus.home.view.GridViewForScrollView>
+
+        <TextView
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_estate_rent_time"
+            android:layout_alignParentRight="@+id/tv_estate_rent_name"
+            android:layout_below="@+id/gvfs_estate_rent_ptss"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_light_gray" />
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line5"
+            android:layout_below="@+id/line5"
+            android:layout_marginTop="5dp"
+            android:text="描述"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_estate_rent_miaoshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line1"
+            android:layout_below="@+id/TextView07"
+            android:layout_marginTop="5dp"
+            android:minLines="3"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/line6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/line1"
+            android:layout_below="@+id/tv_estate_rent_miaoshu"
+            android:layout_marginTop="5dp"
+            android:background="@color/line_light_gray" />
+
+        <Button
+            android:id="@+id/btn_estate_rent_call"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/line6"
+            android:layout_margin="10dp"
+            android:background="@color/txt_hisense_green"
+            android:drawableLeft="@drawable/icn_phoe_call"
+            android:drawablePadding="-5dp"
+            android:padding="10dp"
+            android:textColor="@drawable/text_white_gray"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/textView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_estate_rent_call"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:text="收藏"
+            android:textColor="@color/txt_black_light"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/btn_estate_rent_collect"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/btn_estate_rent_call"
+            android:layout_toLeftOf="@+id/textView08"
+            android:background="@drawable/icn_un_collected" />
+    </RelativeLayout>
+
+</ScrollView>

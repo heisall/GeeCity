@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/layout_top_bar" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icn_bind1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icn_bind1"
+        android:text="选择您的房产"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/txt_white" >
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:drawableTop="@color/line_light_gray"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="城市"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_18" />
+
+        <Button
+            android:id="@+id/btn_house_bind_4_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/line1"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="center_vertical"
+            android:text="青岛市"
+            android:textColor="@drawable/text_green_drak"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/line_spei_01"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/line1"
+            android:background="@color/line_light_gray" />
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/line_spei_01"
+            android:drawableTop="@color/line_light_gray"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="小区"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_18" />
+
+        <Button
+            android:id="@+id/btn_house_bind_4_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/line2"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:text="海信花园"
+            android:textColor="@drawable/text_green_drak"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/line_spei_02"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/line2"
+            android:background="@color/line_light_gray" />
+
+        <TextView
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/line_spei_02"
+            android:drawableTop="@color/line_light_gray"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="房号"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_18" />
+
+        <Button
+            android:id="@+id/btn_house_bind_4_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/line3"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:text="一号楼1单元101户"
+            android:textColor="@drawable/text_green_drak"
+            android:textSize="@dimen/text_size_18" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/line_light_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/txt_white"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb_house_bind_4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/btn_house_bind_agree_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="我同意"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/tv_house_bind_4_xieyi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="许可及服务协议"
+            android:clickable="true"
+            android:typeface="sans"
+            android:textColor="#fe5000"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_gray" />
+
+    <Button
+        android:id="@+id/btn_house_bind_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="40dp"
+        android:background="@color/txt_hisense_green"
+        android:textColor="@drawable/text_white_green"
+        android:textSize="@dimen/text_size_18"
+        android:text="下一步" />
+
+</LinearLayout>

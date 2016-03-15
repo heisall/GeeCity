@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/txt_white" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/layout_top_bar" />
+
+    <com.geecity.hisenseplus.home.view.PicViewer
+        android:id="@+id/lvfs_estate_new_info"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/layout_top"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lyt_score"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:baselineAligned="false"
+        android:layout_below="@+id/lvfs_estate_new_info"
+        android:background="@color/line_light_gray"
+        android:paddingBottom="0.5dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/txt_white"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/textview01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="全部商品"
+                android:textColor="@color/txt_hisense_green"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tvscore_line_01"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/txt_hisense_green" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="0.5dp"
+            android:background="@color/txt_white"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/textview02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="我可兑换"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tvscore_line_02"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:visibility="invisible"
+                android:layout_alignParentBottom="true"
+                android:background="@color/txt_hisense_green" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.geecity.hisenseplus.home.view.XListView
+        android:id="@+id/xlv_score"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lyt_score"
+        android:cacheColorHint="@color/txt_hint_gray"
+        android:divider="@color/line_light_gray_1"
+        android:dividerHeight="0.5dp"
+        android:headerDividersEnabled="false"
+        android:listSelector="@null"
+        android:scrollbars="none" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/layout_top_bar" />
+
+    <TextView
+        android:id="@+id/tv_notice_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/txt_black_light"
+        android:textSize="@dimen/text_size_18" />
+
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        >
+        
+    <TextView
+        android:id="@+id/tv_notice_detail_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:layout_gravity="center_vertical|left"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_12" />
+    <TextView
+        android:id="@+id/tv_notice_detail_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="5dp"
+        android:gravity="center|right"
+        android:layout_gravity="center_vertical|right"
+        android:drawableLeft="@drawable/icn_disc_msg"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_12" />
+        
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_notice_detail_signup"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/btn_text_signup"
+        android:textColor="@drawable/text_white_gray"
+        android:background="@drawable/btn_send"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_light_gray" />
+
+    <TextView
+        android:id="@+id/tv_detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/txt_black_light"
+        android:textSize="@dimen/text_size_18"
+        android:visibility="gone"
+        android:layout_marginTop="2dp" />
+    <WebView
+        android:id="@+id/wb_detail_link"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp" />
+
+</LinearLayout>

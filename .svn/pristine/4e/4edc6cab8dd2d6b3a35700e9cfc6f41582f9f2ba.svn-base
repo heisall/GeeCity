@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/txt_white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/item_score_layout_wide_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/layout_bg_gray" >
+
+        <RelativeLayout
+            android:id="@+id/item_score_layout_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@color/txt_white"
+            android:clickable="true"
+            android:paddingBottom="5dp" >
+
+            <ImageView
+                android:id="@+id/item_score_img_left"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/frg_3_hongpei" />
+
+            <TextView
+                android:id="@+id/item_score_tv_title_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/item_score_img_left"
+                android:layout_margin="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="蛋糕店转让"
+                android:textColor="@color/txt_black_light2"
+                android:textSize="@dimen/text_size_14" />
+
+            <FrameLayout
+                android:id="@+id/item_score_frly_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/item_score_tv_title_left"
+                android:layout_below="@+id/item_score_tv_title_left" >
+
+                <TextView
+                    android:id="@+id/item_score_tv_scj"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="市场价：￥20"
+                    android:textColor="@color/txt_hint_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:background="@color/line_light_gray" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/item_score_tv_score_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/item_score_tv_title_left"
+                android:layout_below="@+id/item_score_frly_left"
+                android:text="所需积分 20"
+                android:textColor="@color/txt_hisense_green"
+                android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_score_layout_wide_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/layout_bg_gray" >
+
+        <RelativeLayout
+            android:id="@+id/item_score_layout_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@color/txt_white"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/item_score_img_right"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/frg_3_shiyong" />
+
+            <TextView
+                android:id="@+id/item_score_tv_title_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/item_score_img_right"
+                android:layout_margin="6dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="海信高端曲面电视"
+                android:textColor="@color/txt_black_light2"
+                android:textSize="@dimen/text_size_14" />
+
+            <FrameLayout
+                android:id="@+id/item_score_frly_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/item_score_tv_title_right"
+                android:layout_below="@+id/item_score_tv_title_right" >
+
+                <TextView
+                    android:id="@+id/item_score_tv_scj_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="市场价：￥20"
+                    android:textColor="@color/txt_hint_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:background="@color/line_light_gray" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/item_score_tv_score_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/item_score_tv_title_right"
+                android:layout_below="@+id/item_score_frly_right"
+                android:text="所需积分 20"
+                android:textColor="@color/txt_hisense_green"
+                android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

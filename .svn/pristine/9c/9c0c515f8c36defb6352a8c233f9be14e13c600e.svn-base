@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/main_top_bar"
+        android:layout_width="match_parent"
+        android:background="@color/top_bar_bg_color"
+        android:layout_height="@dimen/activity_topbar_height"
+         >
+
+        <!-- 左侧的菜单按钮 -->
+
+        <Button
+            android:id="@+id/btn_about_hisence_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_estate_back" />
+
+        
+
+        <TextView
+            android:id="@+id/tv_home_topbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="关于信我家" 
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_18" />
+
+      
+    </RelativeLayout>
+  <WebView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/webView_about_hisence"
+    />
+
+</LinearLayout>

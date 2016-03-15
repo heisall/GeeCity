@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/txt_white"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_item_shopcar_store_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layout_bg_gray"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="商户名称"
+        android:textColor="@color/txt_hisense_green"
+        android:textSize="@dimen/text_size_14"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <CheckBox
+            android:id="@+id/cb_item_shopcar_select"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:button="@drawable/btn_house_bind_agree_selector"
+            android:gravity="center"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_item_shopcar"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/cb_item_shopcar_select"
+            android:src="@drawable/icn_community_selected" />
+
+        <TextView
+            android:id="@+id/tv_item_shopcar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_item_shopcar"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/img_item_shopcar"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="商品名称"
+            android:textColor="@color/txt_black_light2"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_item_shopcar_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_item_shopcar"
+            android:layout_alignLeft="@+id/tv_item_shopcar_title"
+            android:layout_toRightOf="@+id/img_item_shopcar"
+            android:text="￥0.00"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="@dimen/text_size_14" />
+
+        <Button
+            android:id="@+id/btn_item_shopcar_add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/img_item_shopcar"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_white_green_selector"
+            android:gravity="center"
+            android:text="＋"
+            android:textColor="@drawable/text_gray_white"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_item_shopcar_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_item_shopcar_add"
+            android:layout_alignTop="@+id/btn_item_shopcar_add"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/btn_item_shopcar_add"
+            android:background="@color/layout_bg_gray"
+            android:gravity="center"
+            android:minEms="2"
+            android:text="1"
+            android:textColor="@color/txt_black_light2"
+            android:textSize="@dimen/text_size_14" />
+
+        <Button
+            android:id="@+id/btn_item_shopcar_less"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBaseline="@+id/btn_item_shopcar_add"
+            android:layout_toLeftOf="@+id/tv_item_shopcar_count"
+            android:background="@drawable/btn_white_green_selector"
+            android:gravity="center"
+            android:text="—"
+            android:textColor="@drawable/text_gray_white"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_item_shopcar_list_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/img_item_shopcar"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_light_gray" />
+    </RelativeLayout>
+
+</LinearLayout>

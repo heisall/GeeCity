@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/layout_top_bar" />
+
+    <ScrollView
+        android:id="@+id/sc_wyjd_detail"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_top"
+        android:layout_above="@+id/layout_wyjd_detail_bottom_pinglun"
+        android:background="@color/layout_bg_gray" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <com.geecity.hisenseplus.home.view.PicViewer
+                android:id="@+id/img_wyjd_detail_pic"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/tv_wyjd_detail_catogery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img_wyjd_detail_pic"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/holo_red_dark"
+                android:padding="1.5dp"
+                android:text="二手市场"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/tv_wyjd_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_wyjd_detail_pic"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="二手轿车转让，2年3万公里"
+                android:textColor="@color/txt_black_light"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:id="@+id/tv_wyjd_detail_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_wyjd_detail_title"
+                android:layout_below="@+id/tv_wyjd_detail_title"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="2015-11-11 12:32"
+                android:textColor="@color/txt_hint_gray"
+                android:textSize="@dimen/text_size_12" />
+
+            <Button
+                android:id="@+id/btn_wyjd_detail_zan"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/tv_wyjd_detail_date"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_zan" />
+
+            <TextView
+                android:id="@+id/tv_wyjd_detail_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_wyjd_detail_zan"
+                android:layout_toRightOf="@+id/btn_wyjd_detail_zan"
+                android:text="赞"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/txt_hint_gray"
+                android:textSize="@dimen/text_size_12" />
+
+            <Button
+                android:id="@+id/btn_wyjd_detail_pinglun"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignBaseline="@+id/btn_wyjd_detail_zan"
+                android:layout_alignLeft="@+id/img_wyjd_detail_pic"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/btn_pinglun" />
+
+            <TextView
+                android:id="@+id/tv_wyjd_detail_view_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_wyjd_detail_zan"
+                android:layout_toRightOf="@+id/btn_wyjd_detail_pinglun"
+                android:text="0"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/txt_hint_gray"
+                android:textSize="@dimen/text_size_12" />
+
+            <Button
+                android:id="@+id/btn_wyjd_detail_share"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignBaseline="@+id/btn_wyjd_detail_zan"
+                android:layout_toLeftOf="@+id/tv_wyjd_detail_share"
+                android:background="@drawable/btn_share" />
+
+            <TextView
+                android:id="@+id/tv_wyjd_detail_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_wyjd_detail_zan"
+                android:layout_alignRight="@+id/img_wyjd_detail_pic"
+                android:layout_marginRight="15dp"
+                android:text="0"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/txt_hint_gray"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignLeft="@+id/img_wyjd_detail_pic"
+                android:layout_alignRight="@+id/img_wyjd_detail_pic"
+                android:layout_below="@+id/btn_wyjd_detail_zan"
+                android:layout_marginTop="12dp"
+                android:background="@color/line_light_gray" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/textView1"
+                android:padding="5dp"
+                android:text="最新评论"
+                android:textColor="@color/txt_hisense_green"
+                android:textSize="@dimen/text_size_14" />
+            
+            <TextView
+                android:id="@+id/tv_wyjd_detail_pinglun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/txt_hisense_green"
+                android:textSize="@dimen/text_size_12" />
+
+            <com.geecity.hisenseplus.home.view.ListViewForScrollView
+                android:id="@+id/lv_wyjd_detail_pinglun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:cacheColorHint="@color/txt_hint_gray"
+                android:clickable="true"
+                android:divider="@null"
+                android:headerDividersEnabled="false"
+                android:listSelector="@null"
+                android:padding="5dp" >
+            </com.geecity.hisenseplus.home.view.ListViewForScrollView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_wyjd_detail_bottom_pinglun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/txt_white"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_wyjd_detail_bottom_pinglun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btn_wyjd_detail_bottom_send"
+            android:background="@null"
+            android:hint="在此发表评论"
+            android:padding="10dp"
+            android:textColorHint="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_wyjd_detail_bottom_send"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@color/txt_hisense_green"
+            android:padding="5dp"
+            android:text="发送"
+            android:textColor="@drawable/text_white_gray"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+</RelativeLayout>

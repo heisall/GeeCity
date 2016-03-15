@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_bg_gray"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/bg_frg_4_top" >
+
+            <com.geecity.hisenseplus.home.view.RoundImageView
+                android:id="@+id/img_pp_head"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/icon_default_head" />
+
+            <TextView
+                android:id="@+id/tv_pp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img_pp_head"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/img_pp_head"
+                android:text="湖岛世家小区"
+                android:textColor="@color/txt_black_light"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:id="@+id/tv_pp_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_pp_name"
+                android:layout_below="@+id/tv_pp_name"
+                android:text="1号楼1单元101"
+                android:textColor="@color/txt_black_light2"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/line_top"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/line_light_gray" />
+
+        <LinearLayout
+            android:id="@+id/ly_pp_center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/line_light_gray" >
+
+            <TextView
+                android:id="@+id/tv_pp_unpay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/txt_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="未缴账单"
+                android:textColor="@color/txt_hisense_green"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/tv_pp_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/txt_white"
+                android:gravity="center"
+                android:clickable="true"
+                android:text="全部账单"
+                android:textColor="@color/txt_black_light2"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_wygl_payment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_light_gray" />
+    </LinearLayout>
+
+</LinearLayout>

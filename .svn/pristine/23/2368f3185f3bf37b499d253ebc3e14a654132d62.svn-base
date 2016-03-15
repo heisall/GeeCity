@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/layout_top_bar" />
+
+    <EditText
+        android:id="@+id/edit_advice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="left|top"
+        android:background="@color/txt_white"
+        android:minLines="5"
+        android:hint="请输入您的建议"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_15" />
+
+    <Button
+        android:id="@+id/btn_advice_comit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_send"
+        android:text="提        交"
+        android:textSize="@dimen/text_size_15" 
+        android:textColor="@drawable/text_white_gray" />
+
+</LinearLayout>

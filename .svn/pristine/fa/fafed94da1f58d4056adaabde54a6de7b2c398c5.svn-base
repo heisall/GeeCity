@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="top_bar_bg_color">#31ccc9</color>
+    <color name="layout_bg_gray">#eeeeee</color>
+    <color name="line_light_gray">#c9c9c9</color>
+    <color name="line_light_gray_1">#edf0ef</color>
+    <color name="line_light_gray_2">#fbfbfb</color>
+    <color name="bg_phone_num">#dcdcdd</color>
+    <color name="bg_notice">#50009b9e</color>
+    <color name="bg_select">#f6f6f6</color>
+    <color name="bg_black_dark">#e5e5e5</color>
+    <color name="bg_estate_gifts">#f0f0f0</color>
+    <color name="bg_ftg1_btn">#40008996</color>
+    <color name="check_green">#00AAA6</color>
+    <color name="check_green_deep">#F05A27</color>
+    <color name="bg_live_top_menu">#dee3f1</color>
+    <!-- 字体颜色 -->
+    <color name="dark_gray">#717171</color>
+    <color name="txt_white">#ffffff</color>
+    <color name="txt_hisense_green">#17a39d</color>
+    <color name="txt_transelte_black">#60000000</color>
+    <color name="txt_hint">#65b9ba</color>
+    <color name="txt_hint_gray">#9f9f9f</color>
+    <color name="bg_bottom_bar">#60ffffff</color>
+    <color name="txt_black">#241a16</color>
+    <color name="txt_black_light">#4a4949</color>
+    <color name="txt_black_light2">#3d3d3d</color>
+    <color name="txt_notice_black">#0a6d66</color>
+    <color name="txt_menu_left">#6f6f6f</color>
+    <color name="light">#CCCCCC</color>
+    <color name="txt_red">#bf0a06</color>
+    <color name="textcolor">#0B1520</color>
+ <!-- 标准文字灰色 -->
+    <color name="image_checked_bg">#66000000</color>
+    <color name="transparent">#30000000</color>
+ <!-- 半透明背景 -->
+ 
+ 	<color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="light_blue">#6593cb</color>
+
+</resources>

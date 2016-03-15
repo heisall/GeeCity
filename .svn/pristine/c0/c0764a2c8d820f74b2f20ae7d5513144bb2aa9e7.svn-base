@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/tv_item_repair_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+		android:background="@drawable/icn_progress_start" />
+
+    <TextView
+        android:id="@+id/tv_item_repair_progress_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tv_item_repair_progress"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="已受理"
+        android:textColor="@color/txt_hisense_green"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/tv_item_repair_progress_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_item_repair_progress_status"
+        android:layout_alignParentRight="true"
+        android:singleLine="true"
+        android:text="12-05 13:23"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/tv_item_repair_progress_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_item_repair_progress_status"
+        android:layout_below="@+id/tv_item_repair_progress_status"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="处理人：李灿"
+        android:textColor="@color/txt_black_light2"
+        android:textSize="@dimen/text_size_12"/>
+
+    <TextView
+        android:id="@+id/tv_item_repair_progress_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_item_repair_progress_status"
+        android:layout_below="@+id/tv_item_repair_progress_content"
+        android:layout_marginTop="2dp"
+        android:text="手机号：18888888888"
+        android:textColor="@color/txt_black_light2"
+        android:textSize="@dimen/text_size_12"/>
+    
+</RelativeLayout>

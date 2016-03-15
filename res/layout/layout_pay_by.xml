@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:text="支付方式"
+        android:textColor="@color/txt_hisense_green"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/line01"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/textView2"
+        android:background="@color/line_light_gray" />
+
+    <RelativeLayout
+        android:id="@+id/rtly_pay_by_weichat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line01"
+        android:background="@color/txt_white"
+        android:clickable="true"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/imageview01"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icn_pay_by_weichat" />
+
+        <TextView
+            android:id="@+id/textView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/imageview01"
+            android:text="微信支付"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/img_payment_pay_by_selected_weichat"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icn_pay_by_selected" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/line02"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rtly_pay_by_weichat"
+        android:background="@color/line_light_gray" />
+
+    <RelativeLayout
+        android:id="@+id/rtly_pay_by_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line02"
+        android:background="@color/txt_white"
+        android:clickable="true"
+        android:visibility="gone"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/imageview11"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icn_pay_by_alipay" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/imageview11"
+            android:text="支付宝"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/img_payment_pay_by_selected_alipay"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icn_pay_by_selected"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/line03"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:visibility="gone"
+        android:layout_below="@+id/rtly_pay_by_alipay"
+        android:background="@color/line_light_gray" />
+
+</RelativeLayout>

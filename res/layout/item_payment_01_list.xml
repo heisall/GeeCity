@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:background="@color/txt_white"
+    android:descendantFocusability="blocksDescendants" >
+
+    <CheckBox
+        android:id="@+id/cb_item_payment_left"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:button="@drawable/btn_house_bind_agree_selector"
+        android:enabled="false"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_item_payment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/cb_item_payment_left"
+        android:text="2015.10"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <RelativeLayout
+        android:id="@+id/rly_item_payment_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/tv_item_payment_date" >
+
+        <TextView
+            android:id="@+id/tv_item_payment_00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="1物业费"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_item_payment_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center|left"
+            android:minWidth="50dp"
+            android:text="2000.10"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_light_gray"/>
+
+</RelativeLayout>

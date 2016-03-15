@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical" >
+
+    <com.geecity.hisenseplus.home.view.RoundImageView
+        android:id="@+id/item_img_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_employ_master" />
+
+    <TextView
+        android:id="@+id/item_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/item_img_head"
+        android:text="王琳琳"
+        android:textColor="@color/txt_black_light"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/item_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_tv_name"
+        android:layout_below="@+id/item_tv_name"
+        android:layout_marginTop="1dp"
+        android:text="2015-11-11"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/item_tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_tv_date"
+        android:layout_below="@+id/item_tv_date"
+        android:layout_marginTop="10dp"
+        android:text="辛苦了"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/item_tv_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_light_gray" />
+
+</RelativeLayout>

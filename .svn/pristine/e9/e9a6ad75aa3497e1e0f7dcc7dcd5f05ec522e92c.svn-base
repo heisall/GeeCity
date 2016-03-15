@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/txt_white"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/item_img_estate"
+        android:layout_width="144dp"
+        android:layout_height="108dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/frg_4_xinfang" />
+
+    <TextView
+        android:id="@+id/item_tv_estate_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/item_img_estate"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="海信湖岛世家"
+        android:textColor="@color/txt_hisense_green"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/item_tv_estate_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_tv_estate_name"
+        android:layout_below="@+id/item_tv_estate_name"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="青岛市 四方区 瑞昌路 学区房"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/item_tv_estate_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_tv_estate_prices"
+        android:layout_alignLeft="@+id/item_tv_estate_1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="在售"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/item_tv_estate_prices_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_img_estate"
+        android:layout_alignParentRight="true"
+        android:singleLine="true"
+        android:text="元/平方"
+        android:textColor="@color/txt_red"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/item_tv_estate_prices_pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_img_estate"
+        android:layout_toLeftOf="@+id/item_tv_estate_prices"
+        android:singleLine="true"
+        android:text="均价"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/item_tv_estate_prices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignBottom="@+id/item_img_estate"
+        android:layout_toLeftOf="@+id/item_tv_estate_prices_sub"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="13000元/平方"
+        android:textColor="@color/txt_red"
+        android:textSize="@dimen/text_size_18" />
+
+</RelativeLayout>

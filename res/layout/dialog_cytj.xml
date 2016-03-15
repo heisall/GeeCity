@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <Button
+        android:id="@+id/btn_cytj_camera"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_send"
+        android:drawableLeft="@drawable/icon_camera_2"
+        android:drawablePadding="-80dp"
+        android:gravity="center"
+        android:paddingLeft="80dp"
+        android:text="拍      照"
+        android:textColor="@drawable/text_white_green"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_cytj_gray"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_send"
+        android:drawableLeft="@drawable/icon_picture_2"
+        android:drawablePadding="-80dp"
+        android:gravity="center"
+        android:paddingLeft="80dp"
+        android:text="相      册"
+        android:textColor="@drawable/text_white_green"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_cytj_exit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_edit"
+        android:text="取       消"
+        android:textSize="18sp" />
+
+</LinearLayout>

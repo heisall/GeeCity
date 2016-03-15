@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/layout_top_bar" />
+
+
+
+    <TextView 
+        android:id="@+id/tv_gg_desc"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/dark_gray"/>
+</RelativeLayout>

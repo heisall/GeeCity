@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/layout_top_bar" />
+
+    <ScrollView
+        android:id="@+id/scv_wyjd"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/layout_bg_gray"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/glry_wygj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/line_light_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/txt_white"
+                android:padding="15dp"
+                android:text="物业员工"
+                android:textColor="@color/txt_hisense_green" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_gray" />
+
+            <com.geecity.hisenseplus.home.view.ListViewForScrollView
+                android:id="@+id/lv_wyjd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/txt_white"
+                android:cacheColorHint="@color/txt_hint_gray"
+                android:clickable="true"
+                android:divider="@null"
+                android:headerDividersEnabled="false"
+                android:listSelector="@null" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

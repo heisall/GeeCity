@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false" >
+
+    <!-- 填充的颜色 -->
+    <solid android:color="@android:color/white" />
+
+    <padding
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp" />
+
+    <solid android:color="@android:color/white" />
+    <!-- 边缘的颜色 -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/txt_hisense_green" />
+
+    <size
+        android:height="62dp"
+        android:width="62dp" />
+
+</shape>

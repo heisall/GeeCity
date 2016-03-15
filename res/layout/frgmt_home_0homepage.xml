@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layout_bg_gray"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.geecity.hisenseplus.home.view.PicViewer
+            android:id="@+id/frg0_picviewer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ad_height" >
+        </com.geecity.hisenseplus.home.view.PicViewer>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/txt_white"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icn_notice" />
+
+            <com.geecity.hisenseplus.home.view.AutoTextView
+                android:id="@+id/tv_frg_notice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/frg_duihuan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/txt_white"
+                android:clickable="true"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="66dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/frg_duihuan" />
+
+                <TextView
+                    android:id="@+id/textviewleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="积分兑换"
+                    android:textColor="@color/top_bar_bg_color"
+                    android:textSize="@dimen/text_size_18" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textviewleft"
+                    android:layout_toLeftOf="@+id/img1"
+                    android:layout_toRightOf="@+id/img1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="积分兑换礼品"
+                    android:textColor="@color/txt_hint_gray"
+                    android:textSize="@dimen/text_size_12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frg_qiandao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="@color/txt_white"
+                android:clickable="true"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="66dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/frg_qiandao" />
+
+                <TextView
+                    android:id="@+id/textviewright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="戳此签到"
+                    android:textColor="@color/top_bar_bg_color"
+                    android:textSize="@dimen/text_size_18" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textviewright"
+                    android:layout_toLeftOf="@+id/img2"
+                    android:layout_toRightOf="@+id/img2"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="每日签到得积分"
+                    android:textColor="@color/txt_hint_gray"
+                    android:textSize="@dimen/text_size_12" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_frg_manager_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableEnd="@drawable/btn_more"
+            android:padding="10dp"
+            android:text="管家服务"
+            android:textColor="@drawable/text_black_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <HorizontalScrollView
+                android:id="@+id/hs_frg_1_wygl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false" >
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/txt_white"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_frg_1_notice"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/frg_1_notice" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="物业通知"
+                            android:textColor="@color/txt_black_light"
+                            android:textSize="@dimen/text_size_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/txt_white"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_frg_1_live"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/frg_1_live" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="社区活动"
+                            android:textColor="@color/txt_black_light"
+                            android:textSize="@dimen/text_size_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/txt_white"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_frg_1_wyjd"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/frg_1_jiandu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="物业监督"
+                            android:textColor="@color/txt_black_light"
+                            android:textSize="@dimen/text_size_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/txt_white"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_frg_1_baoxiu"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/frg_1_baoxiu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="物业报修"
+                            android:textColor="@color/txt_black_light"
+                            android:textSize="@dimen/text_size_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/txt_white"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_frg_1_praise"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/frg_1_praise" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="物业投诉"
+                            android:textColor="@color/txt_black_light"
+                            android:textSize="@dimen/text_size_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/txt_white"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_frg_1_order"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/frg_1_order" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="物业账单"
+                            android:textColor="@color/txt_black_light"
+                            android:textSize="@dimen/text_size_14" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/btn_frgmt_0_left"
+                android:layout_width="46.8dp"
+                android:layout_height="26.2dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="-15dp"
+                android:background="@drawable/btn_arrow_left_selector" />
+
+            <Button
+                android:id="@+id/btn_frgmt_0_right"
+                android:layout_width="46.8dp"
+                android:layout_height="26.2dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="-15dp"
+                android:background="@drawable/btn_arrow_right_selector" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_frg_live_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableEnd="@drawable/btn_more"
+            android:padding="10dp"
+            android:text="便民信息"
+            android:textColor="@drawable/text_black_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp" >
+
+            <ImageView
+                android:id="@+id/imageView01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/frg_2_songshui" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/frg_2_jiazheng" />
+
+                <ImageView
+                    android:id="@+id/imageView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/frg_2_xianhua" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/frg_2_xiyi" />
+
+                <ImageView
+                    android:id="@+id/imageView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/frg_2_dangao" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_frg_mall_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableEnd="@drawable/btn_more"
+            android:padding="10dp"
+            android:text="商家信息"
+            android:textColor="@drawable/text_black_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/imageView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/txt_white"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="45dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/frg_3_tuangou" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="团购"
+                        android:textColor="@color/txt_black_light2"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/imageView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="0.5dp"
+                    android:layout_weight="1"
+                    android:background="@color/txt_white"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="45dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/frg_3_jiazhuang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="食品"
+                        android:textColor="@color/txt_black_light2"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="0.5dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/imageView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/txt_white"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="45dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/frg_3_shuiguo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="商户"
+                        android:textColor="@color/txt_black_light2"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/imageView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/txt_white"
+                    android:clickable="true"
+                    android:layout_marginTop="0.5dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="45dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/frg_3_hongpei" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="家装"
+                        android:textColor="@color/txt_black_light2"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/frg_3_shiyong" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_frg_house_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableEnd="@drawable/btn_more"
+            android:padding="10dp"
+            android:text="房屋信息"
+            android:textColor="@drawable/text_black_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp" >
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/frg_4_xinfang" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/frg_4_ershoufang" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/frg_4_zufang" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

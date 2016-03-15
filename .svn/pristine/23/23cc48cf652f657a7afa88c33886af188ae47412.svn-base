@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/layout_top_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/line_light_gray" />
+
+    <LinearLayout
+        android:id="@+id/layout_house_bind"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:background="@color/txt_white" 
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icn_location" />
+
+        <TextView
+            android:id="@+id/tv_house_bind_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/txt_white"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="GPS定位中..."
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_gray" />
+    
+    <ListView
+        android:id="@+id/lv_house_bind"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:headerDividersEnabled="false"
+        android:clickable="true"
+        android:cacheColorHint="@color/txt_hint_gray"
+        android:listSelector="@null" >
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_gray" />
+
+</LinearLayout>

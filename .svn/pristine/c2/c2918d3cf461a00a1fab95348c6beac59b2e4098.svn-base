@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/main_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_topbar_height"
+        android:background="@color/top_bar_bg_color" >
+
+        <!-- 左侧的菜单按钮 -->
+
+        <Button
+            android:id="@+id/btn_home_menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_add_shopcar"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_home_message"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_home_message_selector" />
+
+        <TextView
+            android:id="@+id/tv_home_topbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="依云小镇"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/text_size_18" />
+
+        <Button
+            android:id="@+id/btn_home_select_area"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_home_topbar_title"
+            android:background="@drawable/arrow_down" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line"
+        android:layout_below="@+id/main_top_bar" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/line" 
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_height="0.5dp"
+        android:background="@color/line_light_gray_1"/>
+    
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_bottom_bar"
+        android:baselineAligned="false"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_home_bottom_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_home_bottom_home"
+                android:layout_width="53.5dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bottombar_home_selector"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_home_bottom_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="@string/home_bottom_bar_home"
+                android:textColor="@color/txt_hint_gray"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_home_bottom_manager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_home_bottom_manager"
+                android:layout_width="53.5dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bottombar_manager_selector" />
+
+            <TextView
+                android:id="@+id/tv_home_bottom_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="@string/home_bottom_bar_manager"
+                android:textColor="@color/txt_hint_gray"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_home_bottom_live"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_home_bottom_live"
+                android:layout_width="53.5dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bottombar_live_selector" />
+
+            <TextView
+                android:id="@+id/tv_home_bottom_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="@string/home_bottom_bar_live"
+                android:textColor="@color/txt_hint_gray"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_home_bottom_discovery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_home_bottom_discovery"
+                android:layout_width="53.5dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bottombar_discovery_selector" />
+
+            <TextView
+                android:id="@+id/tv_home_bottom_discovery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="@string/home_bottom_bar_discovery"
+                android:textColor="@color/txt_hint_gray"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_home_bottom_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_home_bottom_me"
+                android:layout_width="53.5dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bottombar_me_selector" />
+
+            <TextView
+                android:id="@+id/tv_home_bottom_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="@string/home_bottom_bar_me"
+                android:textColor="@color/txt_hint_gray"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scv_estate_detail_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <com.geecity.hisenseplus.home.view.PicViewer
+            android:id="@+id/pv_estate_send_pics"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/btn_estate_second_back"
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_estate_back" />
+
+        <TextView
+            android:id="@+id/tv_estate_second_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pv_estate_send_pics"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/tv_estate_second_view_count"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_25" />
+
+        <TextView
+            android:id="@+id/tv_estate_second_view_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_estate_second_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_estate_second_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_estate_second_name"
+            android:layout_below="@+id/tv_estate_second_name"
+            android:layout_marginTop="-7dp"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_estate_second_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_estate_second_time"
+            android:layout_alignRight="@+id/tv_estate_second_view_count"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/tv_estate_second_time"
+            android:layout_alignRight="@+id/tv_estate_second_address"
+            android:layout_below="@+id/tv_estate_second_time"
+            android:layout_marginTop="5dp"
+            android:background="@color/line_light_gray" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="10dp"
+            android:text="售价"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/tv_estate_second_prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:textColor="@color/txt_red"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_estate_second_prices"
+            android:text="户型"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_estate_second_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/TextView01"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/TextView033"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_estate_second_type"
+            android:text="面积"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_16" />
+        
+        <TextView
+            android:id="@+id/tv_estate_second_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView033"
+            android:layout_alignRight="@+id/line1"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/TextView033"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_estate_second_time"
+            android:layout_alignRight="@+id/tv_estate_second_address"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_light_gray" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line1"
+            android:layout_below="@+id/line1"
+            android:layout_marginTop="5dp"
+            android:text="装修"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_estate_second_zhuangxiu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView02"
+            android:layout_alignBottom="@+id/TextView02"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/TextView02"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_estate_second_time"
+            android:layout_alignRight="@+id/tv_estate_second_address"
+            android:layout_below="@+id/tv_estate_second_zhuangxiu"
+            android:layout_marginTop="5dp"
+            android:background="@color/line_light_gray" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line2"
+            android:layout_below="@+id/line2"
+            android:layout_marginTop="5dp"
+            android:text="楼层"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_estate_second_louceng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView03"
+            android:layout_alignBottom="@+id/TextView03"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/TextView03"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_estate_second_time"
+            android:layout_alignRight="@+id/tv_estate_second_address"
+            android:layout_below="@+id/tv_estate_second_louceng"
+            android:layout_marginTop="5dp"
+            android:background="@color/line_light_gray" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line3"
+            android:layout_below="@+id/line3"
+            android:layout_marginTop="5dp"
+            android:text="朝向"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_estate_second_chaoxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView04"
+            android:layout_alignBottom="@+id/TextView04"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/TextView04"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_estate_second_time"
+            android:layout_alignRight="@+id/tv_estate_second_address"
+            android:layout_below="@+id/tv_estate_second_chaoxiang"
+            android:layout_marginTop="5dp"
+            android:background="@color/line_light_gray" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line4"
+            android:layout_below="@+id/line4"
+            android:layout_marginTop="5dp"
+            android:text="年代"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_estate_second_niandai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView05"
+            android:layout_alignBottom="@+id/TextView05"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/TextView05"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_estate_second_time"
+            android:layout_alignRight="@+id/tv_estate_second_address"
+            android:layout_below="@+id/tv_estate_second_niandai"
+            android:layout_marginTop="5dp"
+            android:background="@color/line_light_gray" />
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line5"
+            android:layout_below="@+id/line5"
+            android:layout_marginTop="5dp"
+            android:text="特点"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_estate_second_tedian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView06"
+            android:layout_alignBottom="@+id/TextView06"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/TextView06"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <!-- <TextView
+            android:id="@+id/tv_estate_second_tedian2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView06"
+            android:layout_alignBottom="@+id/TextView06"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/tv_estate_second_tedian"
+            android:background="@drawable/icn_estate_second_type_school"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_16" /> -->
+
+        <TextView
+            android:id="@+id/line6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_estate_second_time"
+            android:layout_alignRight="@+id/tv_estate_second_address"
+            android:layout_below="@+id/tv_estate_second_tedian"
+            android:layout_marginTop="5dp"
+            android:background="@color/line_light_gray" />
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line6"
+            android:layout_below="@+id/line6"
+            android:layout_marginTop="5dp"
+            android:text="房源描述"
+            android:textColor="@color/txt_hisense_green"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_estate_second_miaoshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line6"
+            android:layout_below="@+id/TextView07"
+            android:layout_marginTop="5dp"
+            android:minLines="3"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/line7"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_estate_second_time"
+            android:layout_alignRight="@+id/tv_estate_second_address"
+            android:layout_below="@+id/tv_estate_second_miaoshu"
+            android:layout_marginTop="5dp"
+            android:background="@color/line_light_gray" />
+
+        <Button
+            android:id="@+id/btn_estate_second_call"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/line7"
+            android:layout_margin="10dp"
+            android:background="@color/txt_hisense_green"
+            android:drawableLeft="@drawable/icn_phoe_call"
+            android:drawablePadding="-5dp"
+            android:padding="10dp"
+            android:textColor="@drawable/text_white_gray"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/textView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_estate_second_call"
+            android:layout_alignRight="@+id/tv_estate_second_address"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/txt_black_light"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/btn_estate_second_collect"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/btn_estate_second_call"
+            android:layout_toLeftOf="@+id/textView08"
+            android:background="@drawable/icn_un_collected" />
+
+        
+
+    </RelativeLayout>
+
+</ScrollView>

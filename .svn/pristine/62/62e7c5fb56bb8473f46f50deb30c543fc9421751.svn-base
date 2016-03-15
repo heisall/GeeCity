@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/txt_white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/item_msg_icn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/icn_msg" />
+
+    <TextView
+        android:id="@+id/item_msg_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/item_msg_tv_date"
+        android:layout_toRightOf="@+id/item_msg_icn"
+        android:text="帖子通知"
+        android:textColor="@color/txt_black_light"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/item_msg_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_msg_tv_title"
+        android:layout_alignRight="@+id/item_msg_tv_date"
+        android:layout_below="@+id/item_msg_tv_title"
+        android:layout_marginTop="2dp"
+        android:text="有人评论了您的帖子[二手车]"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignLeft="@+id/item_msg_tv_content"
+        android:layout_below="@+id/item_msg_tv_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_light_gray" />
+
+    <TextView
+        android:id="@+id/item_msg_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_msg_tv_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="2015-11-15"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_12" />
+
+</RelativeLayout>

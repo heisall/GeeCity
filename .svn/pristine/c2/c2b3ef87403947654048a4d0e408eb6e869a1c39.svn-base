@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/txt_white" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/layout_top_bar" />
+
+    <RelativeLayout
+        android:id="@+id/ly_item_order_comp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/img_item_order_comp_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icn_community_selected" />
+
+        <TextView
+            android:id="@+id/tv_item_order_comp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/img_item_order_comp_logo"
+            android:ellipsize="end"
+            android:gravity="left|top"
+            android:maxLines="2"
+            android:textColor="@color/txt_black_light2"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_item_order_comp_miaos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_item_order_comp_name"
+            android:layout_below="@+id/tv_item_order_comp_name"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+    <RatingBar
+        android:id="@+id/rtbr_repair_compl"
+        style="?android:attr/ratingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly_item_order_comp"
+        android:layout_centerHorizontal="true"
+        android:max="5"
+        android:numStars="5"
+        android:rating="5.0"
+        android:stepSize="1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rtbr_repair_compl"
+        android:layout_margin="10dp"
+        android:background="@color/line_light_gray"
+        android:orientation="vertical"
+        android:padding="0.5dp" >
+
+        <EditText
+            android:id="@+id/et_repair_add_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/txt_white"
+            android:gravity="top|left"
+            android:hint="喜欢此商品吗？说点您的感受吧"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:minLines="6"
+            android:padding="10dp"
+            android:textColor="@color/txt_hint_gray"
+            android:textColorHint="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <requestFocus />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_repair_compl_send"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_send"
+        android:text="提               交"
+        android:textColor="@drawable/text_white_gray"
+        android:textSize="@dimen/text_size_16" />
+
+</RelativeLayout>

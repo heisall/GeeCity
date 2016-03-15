@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rly_item_address"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/txt_white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/img_item_adrs_selected"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icn_pay_by_selected" />
+
+    <TextView
+        android:id="@+id/tv_item_adrs_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:clickable="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:text="姓名"
+        android:textColor="@color/txt_black_light2"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/tv_item_adrs_phone"
+        android:layout_width="wrap_content"
+            android:clickable="true"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_item_adrs_name"
+        android:layout_toLeftOf="@+id/img_item_adrs_selected"
+        android:singleLine="true"
+        android:text="18888888888"
+        android:textColor="@color/txt_black_light2"
+        android:textSize="@dimen/text_size_16" />
+
+
+    <TextView
+        android:id="@+id/tv_item_adrs_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:clickable="true"
+        android:layout_below="@+id/tv_item_adrs_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/img_item_adrs_selected"
+        android:ellipsize="end"
+        android:gravity="left|top"
+        android:maxLines="2"
+        android:text="地址地址地址地址地址地址地址地址"
+        android:textColor="@color/txt_black_light"
+        android:textSize="@dimen/text_size_12" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_adrs_address"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_address_default"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:focusable="false"
+            android:background="@drawable/btn_address_undefalut" />
+
+        <TextView
+            android:id="@+id/tv_item_adrs_flag_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="设为默认"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_item_adrs_address"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_address_del"
+            android:layout_width="20dp"
+            android:focusable="false"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_address_delete" />
+
+        <TextView
+            android:id="@+id/tv_item_adrs_delet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="删除"
+            android:textColor="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+</RelativeLayout>

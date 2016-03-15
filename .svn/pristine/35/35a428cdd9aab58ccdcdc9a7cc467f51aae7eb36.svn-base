@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_topbar_height"
+    android:background="@color/top_bar_bg_color" >
+
+    <!-- 左侧的返回按钮 -->
+
+    <Button
+        android:id="@+id/btn_home_menu"
+        android:layout_width="@dimen/top_bar_back_width"
+        android:layout_height="@dimen/top_bar_back_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/btn_topbar_back_selector"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_home_message"
+        android:layout_width="@dimen/top_bar_back_height"
+        android:layout_height="@dimen/top_bar_back_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/btn_topbar_add_selector"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_home_topbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/txt_white"
+        android:textSize="@dimen/text_size_18" />
+
+</RelativeLayout>

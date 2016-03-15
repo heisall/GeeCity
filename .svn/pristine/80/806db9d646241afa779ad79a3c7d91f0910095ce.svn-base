@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/txt_white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/layout_top_bar" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="+ 继续绑定房产"
+        android:background="@color/layout_bg_gray"
+        android:textColor="@drawable/text_drak_green"
+        android:textSize="@dimen/text_size_18" />
+
+    <com.geecity.hisenseplus.home.view.ListViewForScrollView
+        android:id="@+id/lv_my_estate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/txt_hint_gray"
+        android:divider="@color/layout_bg_gray"
+        android:dividerHeight="0.5dp"
+        android:headerDividersEnabled="false"
+        android:listSelector="@null"
+        android:scrollbars="none" />
+
+</LinearLayout>

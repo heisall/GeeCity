@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:id="@+id/rly_item_repair"
+    android:background="@color/txt_white"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="提交时间:"
+        android:textColor="@color/txt_notice_black"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/tv_item_repair_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textview1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/textview1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="2015-12-15 12:00"
+        android:textColor="@color/txt_hisense_green"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/tv_item_repair_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textview1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:text="已完成"
+        android:textColor="@color/txt_hisense_green"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/item_notice_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textview1"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="我家门口消防栓形同虚设，都坏了好几年了！"
+        android:textColor="@color/txt_black_light"
+        android:textSize="@dimen/text_size_18" />
+
+    <Button
+        android:id="@+id/btn_item_repair_appraise"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/item_notice_tv_title"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/txt_white"
+        android:textSize="@dimen/text_size_12" 
+        android:background="@drawable/btn_send"
+        android:text="评价" />
+
+    <RatingBar
+        android:id="@+id/raBar_item_repair_appraise"
+        android:layout_width="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="5.0"
+        android:stepSize="0.5"
+        android:layout_below="@+id/item_notice_tv_title"
+        android:layout_alignParentRight="true" />
+    
+</RelativeLayout>

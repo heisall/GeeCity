@@ -1,0 +1,267 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/layout_top_bar" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icn_bind2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请补全房屋业主预留手机号"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/btn_house_bind_5_change"
+            android:layout_width="95dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/btn_house_change_num" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/line_light_gray"
+        android:padding="2dp" >
+
+        <TextView
+            android:id="@+id/tv_house_num_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_phone_num"
+            android:gravity="center"
+            android:textColor="@color/txt_black_light"
+            android:textSize="@dimen/text_size_45" />
+
+        <TextView
+            android:id="@+id/tv_house_num_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/bg_phone_num"
+            android:gravity="center"
+            android:textColor="@color/txt_black_light"
+            android:textSize="@dimen/text_size_45" />
+
+        <TextView
+            android:id="@+id/tv_house_num_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/bg_phone_num"
+            android:gravity="center"
+            android:textColor="@color/txt_black_light"
+            android:textSize="@dimen/text_size_45" />
+
+        <EditText
+            android:id="@+id/et_house_num_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/txt_white"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="1"
+            android:textColor="@color/bg_phone_num"
+            android:textSize="@dimen/text_size_45" />
+
+        <EditText
+            android:id="@+id/et_house_num_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/txt_white"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="1"
+            android:textColor="@color/bg_phone_num"
+            android:textSize="@dimen/text_size_45" />
+
+        <EditText
+            android:id="@+id/et_house_num_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/txt_white"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="1"
+            android:textColor="@color/bg_phone_num"
+            android:textSize="@dimen/text_size_45" />
+
+        <EditText
+            android:id="@+id/et_house_num_7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/txt_white"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="1"
+            android:textColor="@color/bg_phone_num"
+            android:textSize="@dimen/text_size_45" />
+
+        <EditText
+            android:id="@+id/et_house_num_8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/txt_white"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="1"
+            android:textColor="@color/bg_phone_num"
+            android:textSize="@dimen/text_size_45" />
+
+        <EditText
+            android:id="@+id/et_house_num_9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/txt_white"
+            android:gravity="center"
+            android:inputType="phone"
+            android:maxLength="1"
+            android:imeOptions="actionDone"
+            android:textColor="@color/bg_phone_num"
+            android:textSize="@dimen/text_size_45" />
+
+        <TextView
+            android:id="@+id/tv_house_num_10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/bg_phone_num"
+            android:gravity="center"
+            android:textColor="@color/txt_black_light"
+            android:textSize="@dimen/text_size_45" />
+
+        <TextView
+            android:id="@+id/tv_house_num_11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/bg_phone_num"
+            android:gravity="center"
+            android:textColor="@color/txt_black_light"
+            android:textSize="@dimen/text_size_45" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="注意：如已更换手机号码，需业主前往服务中心更新"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="您在家庭中的角色"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_gray" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/line_light_gray" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/txt_white"
+            android:button="@drawable/rb_house_bind_selector"
+            android:checked="true"
+            android:padding="10dp"
+            android:text="房产证在我名下"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/txt_white"
+            android:button="@drawable/rb_house_bind_selector"
+            android:padding="10dp"
+            android:text="我是业主家属"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/txt_white"
+            android:button="@drawable/rb_house_bind_selector"
+            android:padding="10dp"
+            android:text="我是租客"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_16" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_gray" />
+
+    <Button
+        android:id="@+id/btn_house_bind_5_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="40dp"
+        android:background="@color/txt_hisense_green"
+        android:text="确定"
+        android:textColor="@drawable/text_white_green"
+        android:textSize="@dimen/text_size_18" />
+
+</LinearLayout>

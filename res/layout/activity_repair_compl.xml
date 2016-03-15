@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/layout_top_bar" />
+
+    <TextView
+        android:id="@+id/tv_repair_compl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top"
+        android:layout_margin="10dp"
+        android:text="我家门口消防栓形同虚设，都坏了好几年了"
+        android:textColor="@color/txt_black_light2"
+        android:textSize="@dimen/text_size_16" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_repair_compl_title"
+        android:layout_margin="10dp"
+        android:background="@color/line_light_gray"
+        android:orientation="vertical"
+        android:padding="0.5dp" >
+
+        <EditText
+            android:id="@+id/et_repair_add_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/txt_white"
+            android:gravity="top|left"
+            android:hint="说点什么吧"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:minLines="6"
+            android:padding="10dp"
+            android:textColor="@color/txt_hint_gray"
+            android:textColorHint="@color/txt_hint_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <requestFocus />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_margin="10dp"
+        android:text="综合评价"
+        android:textColor="@color/txt_hint_gray"
+        android:textSize="@dimen/text_size_16" />
+
+    <RatingBar
+        android:id="@+id/rtbr_repair_compl"
+        style="?android:attr/ratingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginRight="10dp"
+        android:max="5"
+        android:numStars="5"
+        android:stepSize="1"
+        android:rating="4.0" />
+
+    <Button
+        android:id="@+id/btn_repair_compl_send"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_send"
+        android:textColor="@drawable/text_white_gray"
+        android:textSize="@dimen/text_size_16"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="提               交" />
+
+    <TextView
+        android:id="@+id/tvScore_repair_compl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn_repair_compl_send"
+        android:layout_below="@+id/rtbr_repair_compl"
+        android:layout_margin="10dp"
+        android:text="4分"
+        android:textColor="@color/txt_hisense_green"
+        android:textSize="@dimen/text_size_16" />
+
+</RelativeLayout>

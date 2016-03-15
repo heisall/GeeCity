@@ -1,0 +1,6 @@
+#webserver=http://www.hisenseplus.com:8100/appPhone/rest/
+webserver=http://app.hisenseplus.com:8100/appPhone/rest/
+
+#webserver=http://www.hisenseplus.com:8100/appPhoneTest/rest/
+#webserver=http://192.168.1.39:8080/appPhone/rest/
+debug=false
